@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff9ae3ff"
+    android:id="@+id/transIm">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go!"
+        android:id="@+id/goBtn"
+        android:onClick="onClickButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchTxt"
+        android:gravity="center"
+        android:autoText="false"
+        android:hint="Enter a name.."
+        android:textAlignment="center"
+        android:textColor="#ff626d65"
+        android:layout_above="@+id/goBtn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/transTextView"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="#ffff1335"
+        android:textSize="23dp"
+        android:editable="true"
+        android:hint="Results will appear here."
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Transliterate"
+        android:id="@+id/switchTxtView"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/transTextView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/trans"
+        android:adjustViewBounds="true"
+
+        android:maxHeight="250dp"
+        android:maxWidth="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAddNameClick" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        android:checked="false"
+        android:layout_below="@+id/switchTxtView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
